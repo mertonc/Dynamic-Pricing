@@ -2,6 +2,12 @@
 
 This project finds the best features that can best determine dynamic pricing based off of e-commerce data from (https://www.kaggle.com/datasets/carrie1/ecommerce-data/code?datasetId=1985&sortBy=voteCount) and data from simulating competitor features. The model used to find the most impactful feature is random forest regressor and reinforcement learning. 
 
+Correlation Matrix showed Total Price and Quantity has the highest correlation.
+![image](https://github.com/user-attachments/assets/e1eaaf3e-89de-46f0-b0e6-a5d66c4e249f)
+
+Monthly Sales Trend show higher sales during holiday season in the winter months. 
+![image](https://github.com/user-attachments/assets/6ac67c33-f25f-4b3d-b30c-d1a8f13854c3)
+
 Results show that Random Forest Regressor is a better model for determining dynmaic pricing compared to Reinforcement Learning. 
 
 

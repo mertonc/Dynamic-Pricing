@@ -22,7 +22,6 @@ print(data.isnull().sum())
 data = data.dropna(subset=['CustomerID', 'Description'])
 print(data.isnull().sum())
 
-
 #Drop duplicate values 
 data = data.drop_duplicates()
 

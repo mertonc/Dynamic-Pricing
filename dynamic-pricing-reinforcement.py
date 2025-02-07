@@ -151,9 +151,10 @@ if len(importances) != len(X.columns):
 feature_names = X.columns
 
 # Display feature importances
-feature_importance_df = pd.DataFrame({'Feature': ['Total Quantity', 'Rolling Avg. Price', 'Normalized Competitor Price', 'Month', 'Day of Week', 'Competitor Price × Month', 'Competitor Price × Elasticity'], 'Importance': importances}).sort_values(by='Importance', ascending=False)
+feature_importance_df = pd.DataFrame({'Feature': ['Total Quantity', 'Rolling Avg. Price', 'Normalized Competitor Price', 'Month', 'Day of Week', 
+                                                  'Competitor Price × Month', 'Competitor Price × Elasticity'], 'Importance': importances}).sort_values(by='Importance', ascending=False)
 
-# User-friendly data visualization with seaborn
+# Visualize feature importance
 plt.figure(figsize=(10, 6))
 sns.barplot(x='Importance', y='Feature', data=feature_importance_df, palette='Blues_r')
 plt.xlabel('Importance Scores')
